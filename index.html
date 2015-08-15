@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+<head>
+<title>Button demo</title>
+</head>
+<body>
+
+<img class="pic-button" src="frac1.jpg"/>
+
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.js"></script>
+<script type="text/javascript">
+var count = 0;
+$(document).ready(function() {
+  console.log("button initialization...");
+  $(".pic-button").click(function(e) {
+        count += 1;
+        console.log(count);
+        if (count > 5) {
+          $(".pic-button").attr("str", "frac2.jpg");
+        }
+      })
+});
+</script>
+
+</body>
+</html>
