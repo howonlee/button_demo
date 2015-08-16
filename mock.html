@@ -3,20 +3,18 @@
 <head>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
-<link rel="stylesheet" href="./people.css">
+<link rel="stylesheet" href="./mock.css">
 </head>
 <body>
     
-<nav class="navbar navbar-inverse navbar-fixed-top">
-  <div class="container">
-    <div class="navbar-header">
-    </div>
-  </div>
-</nav>
 
 <div class="page-container container-fluid">
-  <div class="row">
+  <nav class="navbar navbar-inverse">
+    <div class="navbar-header">
+    </div>
+  </nav>
 
+  <div class="row">
     <div class="col-md-3">
       <ul class="list-group">
         <li class="list-group-item btn person-widget">
@@ -24,26 +22,27 @@
             <span class="glyphicon glyphicon-menu-down"></span>
           </span>
           <a href="#personcollapse1" data-toggle="collapse">
-            <h4 class="person-name">Bob dobbs</h4>
+            <h4 class="person-name">Bob Dobbs</h4>
           </a>
           <div class="collapse" id="personcollapse1">
             <label>Email: </label><div class="person-email">bob@dobbs.com</div>
             <label>Phone: </label><div class="person-tel">858-525-3227</div>
             <ul class="list-group">
-            <li class="list-group-item btn person-edge-widget">
-              <!-- have an edge -->
-            </li>
-            <li class="list-group-item btn person-edge-widget">
-              <!-- have an edge -->
-            </li>
-            <li class="list-group-item btn">
-              <!-- add person button -->
-            </li>
+              <li class="list-group-item">
+              Lines from Bob Dobbs
+              </li>
+              <li class="list-group-item btn person-edge-widget">
+                <h4 class="person-name">Bob Robbs</h4>
+              </li>
+              <li class="list-group-item btn person-edge-widget">
+                <h4 class="person-name">Mob Robbs</h4>
+              </li>
+              <li class="list-group-item btn btn-primary">Add line</li>
           </ul>
           </div>
         </li>
-        <li>
-        <!-- add person button -->
+        <li class="list-group-item btn btn-primary btn-addperson">
+        Add person
         </li>
       </ul>
     </div>
