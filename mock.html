@@ -8,26 +8,39 @@
 <body>
 <div class="page-container container-fluid">
   <div class="row">
+
     <div class="col-md-3">
       <ul class="list-group">
-        <li class="list-group-item person-widget">
+        <li class="list-group-item btn person-widget">
           <span class="badge">
             <span class="glyphicon glyphicon-menu-down"></span>
           </span>
-          <h4 class="person-name">Bob dobbs</h4>
-          <span class="person-email">bob@dobbs.com</span>
-          <span class="person-tel">858-525-3227</span>
+          <a href="#personcollapse1" data-toggle="collapse">
+            <h4 class="person-name">Bob dobbs</h4>
+          </a>
+          <div class="collapse" id="personcollapse1">
+            <label>Email: </label><div class="person-email">bob@dobbs.com</div>
+            <label>Phone: </label><div class="person-tel">858-525-3227</div>
+          </div>
         </li>
-        <li class="list-group-item person-widget">
+        <li class="list-group-item btn person-widget">
           <span class="badge">
             <span class="glyphicon glyphicon-menu-down"></span>
           </span>
           <h4 class="person-name">Bob dobbs</h4>
+          <!--
           <span class="person-email">bob@dobbs.com</span>
-          <span class="person-tel">858-525-3227</span>
+          <span class="person-tel">858-525-3227</span> -->
         </li>
       </ul>
     </div>
+
+    <div class="col-md-6">
+    </div>
+    
+    <div class="col-md-">
+    </div>
+
   </div>
 </div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.js"></script>
